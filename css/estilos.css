@@ -1,0 +1,215 @@
+.gallery-image{
+	width: auto;
+	height: auto;
+}
+
+.cuadro{
+	text-align: center;
+	width: 100%;
+}
+
+.repro{
+	position: relative;
+	text-align: center;
+}
+.lol{
+	text-align: center;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+.logot{
+	height: 50px;
+	width: 50px;
+}
+
+.leg{
+	width: 210px;
+}
+
+.new{
+	width: 850px;
+	height: 450px;
+}
+
+body {
+	background: url(../imagenes/bg.png);
+	background-attachment: fixed; /*Establece la imagen fija*/
+	background-repeat: repeat; /*imagen no se repite*/
+	background-size: cover; /**la imagen ocupa todo la vista*/
+	font-family: Helvetica;
+	line-height: 20px;
+}
+
+.contenedor {
+	width: 90%;
+	height: auto;
+	max-width: 900px;
+	margin: auto;
+}
+
+#a{
+	float: left;
+	width: 210px;
+	height: auto;
+}
+#b{
+	float: left;
+	width: 210px;
+}
+#c{
+	float: left;
+	width: 210px;
+}
+#d{
+	float: left;
+	width: 210px;
+}
+
+.rep{
+	height: 350px;
+}
+
+.art2{
+	height: 400px;
+}
+
+.art3{
+	height: 600px;
+}
+
+.fot{
+	text-align: center;
+}
+
+.video2{
+	height: 250px;
+	margin: 0 auto;
+	padding-top: 10px;
+	border-radius: 40px;
+}
+.foto{
+	width: 260px;
+	height: 100px;
+}
+.foto2{
+	width: 260px;
+	height: 100px;
+}
+
+.colo{
+	text-align: center;
+}
+.foto3{
+	width: 150px;
+	height: 50px;
+}
+
+.yoyo{
+		width: 150px;
+		height: 50px;
+}
+
+.fiu{
+	height: 115px;
+	text-align: center;
+}
+
+
+article {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	margin: 20px 0px;
+	color: #f3f3f3;
+	box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	display: block;
+	text-align: center;
+}
+
+article h2 {
+	color: #ffffff;
+}
+
+article hr {
+	background: #ffffff;
+	height: 10px;
+	border: none;
+	border-radius: 10px;
+}
+
+article p {
+	line-height: 25px;
+}
+
+article h2,
+article p,
+article hr {
+	margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------------*/
+
+.ejemplo1 img {
+	transition: all 0.2s linear;
+	height: 200px;
+	width: 200px;
+}
+
+.ejemplo1. mascara {
+	opacity:  0,
+	background-color: rgb(46,157,120, 0.7);
+	transition: all 0.3s ease-in-out;
+}
+
+.ejemplo1 h2 {
+	transform: translatex(-200px);/*desplazamos a la izquierda*/
+	opacity: 0;
+	transition: all 0.7s ease-in-out;
+}
+
+.ejemplo1 p {
+	transform: translatex(200px);/*desplazamos a la derecha*/
+	opacity: 0;
+	transition: all 0.4s linear;
+}
+
+.ejemplo1 a.viculo {
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+    transform: translateY(100px);/*desplazamos para abajo*/
+}
+
+.ejemplo1:hover img {
+	transform: scale(1.1);/*damos un ligero zoom a la imagen*/
+	border-radius: 40px;
+}
+
+.ejemplo2:hover img {
+	transform: scale(1.1);/*damos un ligero zoom a la imagen*/
+}
+
+.ejemplo1:hover .mascara {
+	opacity: 1;
+}
+
+.ejemplo1:hover h2,
+.ejemplo1:hover p,
+.ejemplo1:hover . vinculo {
+   opacity: 1;
+   transform: translateX(0px);/*regresamos a las posiciones originales*/
+}
+
+.ejemplo1:hover p {
+	transition-delay: 0.1s;
+}
+
+.ejemplo1:hover .vinculo  {
+	transition-delay: 0.2s;/*aplicamos un pequeño retarda para que se muestre al final*/
+	transform: translateY(0px);
+}
