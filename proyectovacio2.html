@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>..:: Portafolio web::..</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-latest.js"></script>
+	<script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+	<script type="text/javascript" src="js/jquery-lates.min.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.7"></script>
+
+</head>
+<body>
+		<header class="lol">
+			<img src="imagenes/cabezera.png" alt="">
+		</header>
+
+	<div class="contenedor">
+		<article class="repro">
+			<h2>
+				Función Y Uso De Node: 
+			</h2>
+				<hr>
+				<p>	En la terminal accedemos a la carpeta 03-bases- node <br>
+						Escribimos el código: node app --inicio=1 --fin=10 --listar --hasta=10 <br>
+						asi podremos observar la funcion
+					<div class="contenedor ejemplo1" id="a">
+							<a rel="contenedor-imagen" class="gallery-image" href="capturas/app.JPG" title="App.JS"><img src="capturas/app.JPG" alt=""/></a>Codigo APP.JS
+					</div>
+					<div class="contenedor ejemplo1" id="b">
+						<a rel="contenedor-imagen" class="gallery-image" href="capturas/multiplicar.JPG" title="multiplicar.JS"><img src="capturas/multiplicar.JPG" alt=""/></a>Codigo MULTIPLICAR.JS
+					</div>
+					<div class="contenedor ejemplo1" id="c">
+						<a rel="contenedor-imagen" class="gallery-image" href="capturas/yargs.JPG" title="Yargs.JS"><img src="capturas/yargs.JPG" alt=""/></a>Codigo YARGS.JS
+					</div>
+					<div class="contenedor ejemplo1" id="d">
+						<a rel="contenedor-imagen" class="gallery-image" href="https://drive.google.com/file/d/1VrTzi10fIFG6RPAUJjxglIsGbskgRycH/view?usp=sharing" title="pdf"><img src="img/pdf.png" alt=""/></a>VER PDF
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</p>
+            <script src="js/formulario.js"></script>
+	        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+		</article>
+
+	<article class="fiu">
+		<h1> Jhonatan Jesus Tax Say </h1>
+		<p>2290-18-8137</p>
+	</article>
+		
+	</div>
+	<script>
+		
+
+	$(function(){
+
+		$(".single-image").fancybox({
+			openEffect : 'elastic', //'fade','elastic'
+			closeEffect : 'elastic',
+			openSpeed: 'normal', //ms, slow, normal, fast(default 250ms)
+			closeSpeed: 'normal',
+			helpers : {
+				title:{
+					type: 'inside' //'float', 'inside', 'outside' or 'over'
+				},
+				overlay:{
+					closeClick : true //if true, se cierra al hacer click fuera de la imagen
+				}
+			},
+			padding:11
+		});
+
+		$(".gallery-image").fancybox({
+			openEffect : 'fade',
+			closeEffect : 'fade',
+			closeBtn: false,
+			helpers : {
+				title : {
+					type : 'over' //'float', 'inside', 'outside' or 'over'
+				},
+				thumbs : {
+					width: 50
+				},
+				buttons : {},
+				overlay : {
+					css: {
+						'background' : 'rgba(0,0,0,0.5)'
+					}
+				}
+			}
+		});
+
+		$(".fancyOther").fancybox({
+			width : '70%',
+			height : '70%',
+			maxWidth : 800,
+			maxHeight : 600,
+			fitToView : false,
+			autoSize : false,
+			closeClick : false,
+			openEffect : 'none',
+			closeEffect : 'none'
+		});
+
+		$(".fancyOther2").click(function(){
+			$.fancybox( '<div><h1>Lorem Lipsum</h1><p>Lorem Lipsum</P></div>', {
+				title: 'Custom Title',
+				width: '70%',
+				height:'70%',
+				maxWidth: 800,
+				maxHeight: 600,
+				fitToView: false,
+				autoSize: false,
+				closeClick: false
+			});
+		});
+
+		$(".fancyMedia").fancybox({
+			helpers:{
+				media: {}
+			}
+		});
+
+		$(".fancyMediaMapa").fancybox({
+			helpers:{
+				media: {}
+			},
+
+			width: '100%',
+			height: '100%'
+		});
+	});
+
+	</script>
+
+</body>
+</html>
